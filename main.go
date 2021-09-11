@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"log"
 	"net/http"
 
@@ -23,6 +24,12 @@ type Author struct {
 
 // Init books var as slice Book struct
 var books []Book
+
+// Get all books
+func getBooks(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(books)
+}
 
 /**
 * Main function to handle all of the routes...
