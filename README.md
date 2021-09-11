@@ -24,7 +24,7 @@ git clone https://github.com/ManiruzzamanAkash/GoLang-Rest-API.git
 ```
 
 **Step 3:**
-Go to that project, if you're on another directory. 
+Go to that project, if you're on another directory.
 
 **Rename** the folder to something else -
 ```bash
@@ -50,16 +50,24 @@ Run
 
 ### Test the API Endpoints:**
 
+
 **All Books**
+
 URL: http://localhost:8000/api/books
+
 Method: `get`
+
 
 **Get Single Book**
 URL: http://localhost:8000/api/books/1
+
 Method: `get`
 
+
 **Create a book -**
+
 URL: http://localhost:8000/api/books
+
 Method: `post`
 
 ```json
@@ -73,8 +81,11 @@ Method: `post`
 }
 ```
 
+
 **Update a Book**
+
 URL: http://localhost:8000/api/books/2
+
 Method: `put`
 
 Where `2` is the ID
@@ -90,8 +101,11 @@ Where `2` is the ID
 }
 ```
 
+
 **Delete a Book**
+
 URL: http://localhost:8000/api/books/31847
+
 Method: `delete`
 
 Where `31847` is the ID
